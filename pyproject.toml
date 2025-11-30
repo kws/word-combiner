@@ -1,0 +1,22 @@
+[project]
+name = "word-combiner"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Kaj Siebert",email = "kaj@k-si.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0.0",
+    "python-docx>=1.1.0",
+]
+
+
+[project.scripts]
+word-combiner = "word_combiner.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
